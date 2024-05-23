@@ -670,7 +670,9 @@ async function fetchWithProgress(url) {
         throw new Error('Content-Length response header unavailable');
     }
 
+
     const total = parseInt(contentLength, 10);
+    console.log("total",total)
     let loaded = 0;
 
     const reader = response.body.getReader();
