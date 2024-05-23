@@ -671,7 +671,8 @@ async function fetchWithProgress(url) {
     }
 
 
-    const total = parseInt(contentLength, 10);
+    var total = parseInt(contentLength, 10);
+    total = 36561336
     console.log("total",total)
     let loaded = 0;
 
